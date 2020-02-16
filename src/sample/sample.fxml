@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox alignment="center" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <ListView fx:id="employeeListView" />
+    <VBox>
+        <HBox>
+            <Label minHeight="20.0" prefWidth="100" text="First Name" translateX="5.0">
+            <font>
+               <Font size="15.0" />
+            </font>
+            <padding>
+               <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+            </padding></Label>
+            <TextField fx:id="firstNameTextField" prefWidth="150" />
+        </HBox>
+        <HBox>
+            <Label prefWidth="100" text="Last Name" translateX="5.0" translateY="3.0">
+            <font>
+               <Font size="15.0" />
+            </font></Label>
+            <TextField fx:id="lastNameTextField" prefWidth="150" translateY="3.0" />
+        </HBox>
+        <HBox>
+            <Label prefWidth="100" text="Is Active" translateX="5.0" translateY="3.0">
+            <font>
+               <Font size="15.0" />
+            </font></Label>
+            <CheckBox fx:id="isActiveCheckBox" translateX="5.0" translateY="3.0" />
+        </HBox>
+        <HBox>
+            <Label prefWidth="100" text="Misc.">
+            <font>
+               <Font size="15.0" />
+            </font></Label>
+            <TextField prefWidth="150" />
+        </HBox>
+        <Button mnemonicParsing="false" onAction="#AddButton" prefHeight="32.0" prefWidth="117.0" text="Add new" translateY="32.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding></Button>
+
+        <Button mnemonicParsing="false" onAction="#ClearButton" prefHeight="32.0" prefWidth="117.0" text="Clear" translateX="130.0">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+       
+        <Button mnemonicParsing="false" onAction="#AddDelete" prefHeight="29.0" prefWidth="100.0" text="Delete" textFill="#e50909" translateY="190.0">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+    </VBox>
+</HBox>
