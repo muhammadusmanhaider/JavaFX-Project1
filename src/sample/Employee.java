@@ -1,6 +1,3 @@
-// Muhammad Usman Haider.
-// 1811350.
-
 package sample;
 
 import java.util.UUID;
