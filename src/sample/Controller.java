@@ -1,6 +1,3 @@
-// Muhammad Usman Haider.
-// 1811350.
-
 package sample;
 
 import javafx.beans.value.ObservableValue;
@@ -36,7 +33,6 @@ public class Controller implements Initializable {
                     firstNameTextField.setText(((Employee) selectedItem).firstName);
                     lastNameTextField.setText(((Employee) selectedItem).lastName);
                     isActiveCheckBox.setSelected(((Employee) selectedItem).isActive);
-
                 }
         );
 
@@ -71,11 +67,8 @@ public class Controller implements Initializable {
         items.add(faculty1);
         employeeListView.setItems(items);
         employeeListView.setPrefWidth(250);
-        employeeListView.setPrefHeight(200);
-
-
+        employeeListView.setPrefHeight(200);    
     }
-
 
     //Clear source from: https://www.youtube.com/watch?v=Ri_iICEIKLI
     public void ClearButton(ActionEvent actionEvent) {
@@ -83,6 +76,7 @@ public class Controller implements Initializable {
         lastNameTextField.clear();
         isActiveCheckBox.setSelected(false);
     }
+    
 //source code: https://www.youtube.com/watch?v=O4BHfZQlSbs
     //Add row to the list view
     public void AddButton(ActionEvent actionEvent) {
@@ -92,8 +86,8 @@ public class Controller implements Initializable {
         employee.lastName = lastNameTextField.getText();
         employee.isActive = isActiveCheckBox.isSelected();
         items.add(employee);
-
     }
+    
 //Source code: https://www.youtube.com/watch?v=SnAcSCcz0Sw
     //Delete row from the list view
     public void AddDelete(ActionEvent actionEvent) {
