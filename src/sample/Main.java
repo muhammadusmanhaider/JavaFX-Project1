@@ -1,6 +1,3 @@
-// Muhammad Usman Haider.
-// 1811350.
-
 package sample;
 
 import javafx.application.Application;
@@ -19,7 +16,6 @@ public class Main extends Application {
         primaryStage.setScene(myScene);
         primaryStage.show();
     }
-
 
     public static void main(String[] args) {
         launch(args);
