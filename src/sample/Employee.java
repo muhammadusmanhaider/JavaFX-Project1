@@ -2,9 +2,7 @@ package sample;
 
 import java.util.UUID;
 
-public class Employee implements Worker
-
-{
+public class Employee implements Worker {
     public String firstName;
     public String lastName;
     public UUID id;
